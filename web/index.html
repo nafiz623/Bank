@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Bank</h1>
+        <div id="submit">
+            <h3>Login</h3> <br>
+            <input class="form-control border-success" type="email" id="userMail" placeholder="example@gmail.com"> <br>
+            <input class="form-control border-success" type="password" id="userPass" placeholder="Password"> <br>
+            <input class="form-check-input bg-success" type="checkbox" checked style="border-style: none;">
+            <label class="form-check-label">Remember me</label> <br> <br>
+            <button id="login" class="btn btn-success" type="submit">Login</button>
+        </div>
+    </div>
+    
+    <div id="dashboard">
+        <h1 class="rounded-3 bg-success text-light p-3" style="margin-left: 10px; display: inline;">Dashboard</h1>
+        <button id="logout" class="btn btn-danger" onclick="logOut()">Log out</button>
+        <div class="row" style="margin-top: 35px;">
+            <div class="col-md-4 text-light bg-primary rounded-3 p-4" style="margin: 0 20px; width: 350px;">
+                <h5>Deposit</h5>
+                <h2>$ <span id="currentDeposit">0.00</span></h2>
+            </div>
+            <div class="col-md-4 text-light bg-danger rounded-3 p-4" style="margin: 0 20px; width: 350px;">
+                <h5>Withdraw</h5>
+                <h2>$ <span id="currentWithdraw">0.00</span></h2>
+            </div>
+            <div class="col-md-4 text-light bg-warning rounded-3 p-4" style="margin: 0 20px; width: 350px;">
+                <h5>Total Balance</h5>
+                <h2>$ <span id="currentBalance">0.00</span></h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 dw">
+                <h4>Deposit</h4>
+                <input id="depositInput" class="form-control border-success" type="text" placeholder="$ amount you want to deposit"> <br>
+                <button id="depositBtn" class="btn btn-success">Deposit</button>
+            </div>
+            <div class="col-md-6 dw">
+                <h4>Withdraw</h4>
+                <input id="withdrawInput" class="form-control border-success" type="text" placeholder="$ amount you want to withdraw"> <br>
+                <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

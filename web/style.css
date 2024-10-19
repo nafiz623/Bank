@@ -1,0 +1,31 @@
+#login-area{
+    margin: 0 auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+
+#submit{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 50px;
+}
+
+#dashboard{
+    display: none;
+    padding: 50px;
+}
+
+.dw{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 30px;
+    width: 550px;
+    margin: 20px;
+}
+
+#logout{
+    margin-left: 810px;
+}
